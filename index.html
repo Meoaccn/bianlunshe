@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>黑河学院辩论社文档</title>
+    <link rel="stylesheet" href="./res/docute.css">
+    <base target="_blank" />
+  </head>
+  <body>
+    <noscript>如长时间卡在此页面，请允许浏览器使用JavaScript</noscript>
+    <div id="docute"></div>
+    <script src="./res/docute.js"></script>
+    <script>
+
+if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./res/sw.js')
+      }
+
+new Docute({
+    target: '#docute',
+    title: '黑河学院辩论社文档',
+    home: 'index.md',
+    tocVisibleDepth: 6,
+    footer: `<hr>本站自豪的使用<a href="https://docute.egoist.dev/">Docute</a>构建！`,
+    darkThemeToggler: true,
+    detectSystemDarkTheme: true,
+    imageZoom: true,
+    nav: [
+        {
+        title: '主页',
+        link: '/'
+        },
+        {
+        title: '说明',
+        link: '/in/explain'
+        },
+    ],
+    sidebar: [
+    // A sidebar item, with child links
+    {
+      title: '入门',
+      children: [
+        {
+          title: '辩位介绍',
+          link: '/in/place',
+        },
+        {
+          title: '赛制简介',
+          link: '/in/format'
+        },
+        {
+          title: '评分细则',
+          link: '/in/score'
+        },
+      ]
+    },
+    {
+      title: '资料',
+      children: [
+        {
+          title: '海报',
+          link: '/in/poster'
+        },
+        {
+          title: '辩行记',
+          link: 'http://meo.ac.cn/bxj/'
+        },
+      ]
+    },
+  ]
+    })
+    </script>
+  </body>
+</html>
