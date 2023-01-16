@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>立论第一讲</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="./include/jquery/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="./include/pdf/pdf.viewer.css">
+  <script src="./include/pdf/pdf.js"></script>
+  <script src="./include/officeToHtml/officeToHtml.js"></script>
+  <link rel="stylesheet" href="./include/officeToHtml/officeToHtml.css">
+</head>
+<body>
+    <h1>立论第三讲</h1>
+    <div id="resolte-contaniner" style="width: 100%; height: 85vh;"></div>
+<script>
+var file_path = "./files/立论第三讲.pdf";
+$("#resolte-contaniner").officeToHtml({
+   url: file_path,
+    pdfSetting: {
+      setLang: "",
+      setLangFilesPath: "" /*"include/pdf/lang/locale" - relative to app path*/
+    }
+});
+</script>
+</body>
+</html>
